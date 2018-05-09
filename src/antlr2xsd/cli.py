@@ -6,10 +6,10 @@ import json
 
 @click.command()
 @click.argument('infile', nargs=1)
-@click.argument('rootname',nargs=1)
 @click.argument('roottype',nargs=1)
+@click.argument('rootname',nargs=1)
 @click.argument('outfile', nargs=1)
-def main(infile,rootname,outfile):
+def main(infile,rootname,roottype,outfile):
     listener_opts = {
         'root_name': rootname,
         'root_type': roottype,
