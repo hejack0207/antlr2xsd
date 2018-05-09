@@ -9,7 +9,7 @@ import json
 @click.argument('roottype',nargs=1)
 @click.argument('rootname',nargs=1)
 @click.argument('outfile', nargs=1)
-def main(infile,rootname,roottype,outfile):
+def main(infile,roottype,rootname,outfile):
     listener_opts = {
         'root_name': rootname,
         'root_type': roottype,
