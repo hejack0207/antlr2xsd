@@ -3,6 +3,7 @@ import sys
 import click
 from lxml import etree
 import json
+import antlr2xsd
 
 @click.command()
 @click.argument('infile', nargs=1)
